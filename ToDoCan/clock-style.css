@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: averia serif libre;
+    font-size: 1em;
+    text-align: center;
+}
+/* clock object container */
+#clock-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rosybrown;
+}
+/* clock brackets */
+#frame {
+    font-size: 5em;
+    margin: -0.15em;
+}
+/* time and date container */
+#clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#time {
+    display: flex;
+    flex-direction: row;
+}
+#clock p {
+    margin: 0em;
+}
+#time p, #calender p {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+/* date container */
+#calender {
+    display: flex;
+    flex-direction: column;
+}
+#cal1, #cal2 {
+    display: flex;
+    flex-direction: row;
+}

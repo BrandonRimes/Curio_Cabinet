@@ -1,0 +1,56 @@
+<!--=-= Quote API Search -=-=-=
+=-= Composer: Brandon Rimes =-=
+=-=-=-=-= 10 May 2021 -=-=-=-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <title>QuoteSearch</title>
+</head>
+<body> 
+    <header>
+        
+    </header>
+    <main>
+        <div id="app">
+            <h1>Quote Search</h1>
+<!-- search inputs -->
+            <input type="text" id="search-text" v-model="searchBy" @keyup.enter="loadQuotes" placeholder="search for..."></input>
+            <select v-model="type" id="search-options">
+                <option value="keyword" selected>Keyword</option>
+                <option value="author">Author</option>
+                <option value="tag">Tag</option>
+            </select>
+            <button @click="loadQuotes">Search</button>
+            <button @click="randomQuotes">Random</button>
+            <h3>"{{ searchBy }}"</h3>
+            <hr>
+<!-- pagination -->
+            <div v-show="show == true" class="paging">
+                <button @click="pageDown">&#8678</button>
+                <p>pg. {{ page }}</p>
+                <button @click="pageUp">&#8680</button>
+            </div>
+<!-- API results -->
+            <quote-item
+                v-for="quote in results.quotes"
+                v-bind:quote="quote"
+                v-bind:key="quote.id"
+            ></quote-item>
+<!-- pagination -->
+            <div v-show="show == true" class="paging">
+                <button @click="pageDown">&#8678</button>
+                <p>pg. {{ page }}</p>
+                <button @click="pageUp">&#8680</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

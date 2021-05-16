@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: averia serif libre;
+}
+/* title */
+h1 {
+    font-size: 2em;
+}
+/* quote body */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0em;
+}
+/* quote author */ 
+h4 {
+    font-size: 1em;
+    margin-top: 0em;
+}
+/* pagination */
+.paging {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.paging button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.25em;
+}

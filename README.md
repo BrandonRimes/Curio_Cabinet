@@ -16,6 +16,8 @@ Composer: Brandon Rimes
 
 [View Code](ToDoCan/script.js)
 
+[View Clock Script](Oh_Clock/script.js)
+
 - Simple list-making functionality in **JavaScript**.
 
 ## Quote Search
@@ -38,4 +40,10 @@ Composer: Brandon Rimes
 
 [View Code](Py_Tac_Toe/ttt.py)
 
-- Tic-tac-toe in Python with an elegant win-condition solution.
+- Tic-tac-toe in **Python** with an elegant win-condition solution.
+
+## ManDonutee
+
+[View Code](ManDonutee-A_PyGame/game.py)
+
+- An exploration of simple game mechanics in **Python** with [PyGame](https://www.pygame.org/news).

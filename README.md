@@ -38,7 +38,7 @@ ___
 
 ## JS Tac Toe
 
-[View Site](https://js-tac-toe.netlify.app/)
+[Play!](https://js-tac-toe.netlify.app/)
 
 [View Code](JS_Tac_Toe/script.js)
 
